@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  <p>Available endpoints:</p>
+  ul
+    each val, index in endpoints
+      li= 'POST: ' + val
